@@ -1,20 +1,49 @@
-import * as React from 'react';
-import './App.css';
+import * as React from "react";
+import styled, { keyframes } from "./styled-components";
+import "./App.css";
 
-import logo from './logo.svg';
+import logo from "./logo.svg";
 
+const rotate360 = keyframes`
+  from { transform: rotate(0deg)}
+  to { transform: rotate(360deg)}
+`;
+
+const AppWrapper = styled.div`
+  text-align: center;
+`;
+
+const AppHeader = styled.header`
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+`;
+
+const AppLogo = styled.img`
+  animation: ${rotate360} infinite 20s linear;
+  height: 80px;
+`;
+
+const AppTitle = styled.h1`
+  font-size: ${props => props.theme.fontSizes[2]};
+`;
+
+const AppIntro = styled.p`
+  font-size: large;
+`;
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
+      <AppWrapper>
+        <AppHeader>
+          <AppLogo src={logo} alt="logo" />
+          <AppTitle>Welcome to React</AppTitle>
+        </AppHeader>
+        <AppIntro>
           To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
+        </AppIntro>
+      </AppWrapper>
     );
   }
 }
