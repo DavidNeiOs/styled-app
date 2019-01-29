@@ -1,6 +1,5 @@
 import * as React from "react";
 import styled, { keyframes } from "./styled-components";
-import "./App.css";
 
 import logo from "./logo.svg";
 
@@ -23,6 +22,9 @@ const AppHeader = styled.header`
 const AppLogo = styled.img`
   animation: ${rotate360} infinite 20s linear;
   height: 80px;
+  &:hover {
+    animation: ${rotate360} infinite 1.5s linear;
+  }
 `;
 
 const AppTitle = styled.h1`

@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 // import App from "./App";
-import "./index.css";
 import registerServiceWorker from "./registerServiceWorker";
 
 import { ThemeProvider, createGlobalStyle } from "./styled-components";
@@ -9,8 +8,16 @@ import theme from "./theme";
 import App from "./App";
 
 const GlobalStyle = createGlobalStyle`
-  * {
-    font-family: 'Times New Roman', Times, serif;
+  html {
+    box-sizing: border-box;
+  }
+  html > * {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
   }
 `;
 
