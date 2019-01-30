@@ -21,6 +21,7 @@ export const AppLogo = styled.img`
 
 export const AppTitle = styled.h1`
   font-size: 1.6em;
+  font-weight: 900;
 `;
 
 export const AppIntro = styled.p`
