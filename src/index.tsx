@@ -4,12 +4,13 @@ import * as ReactDOM from "react-dom";
 import registerServiceWorker from "./registerServiceWorker";
 
 import { ThemeProvider } from "./styled-components";
-import theme from "./theme";
+// import theme from "./theme";
 import App from "./App";
 import GlobalStyle from "./theme/GlobalStyle";
+import { theme1 } from "./theme/themes";
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme1}>
     <>
       <GlobalStyle />
       <App />

@@ -6,9 +6,10 @@ export const AppWrapper = styled.div`
 `;
 
 export const AppHeader = styled.header`
-  background-color: #222;
-  padding: 20px;
-  color: white;
+  height: 12rem;
+  padding: 1rem;
+  color: ${props => props.theme.dark};
+  background-color: ${props => props.theme.primary};
 `;
 
 export const AppLogo = styled.img`
