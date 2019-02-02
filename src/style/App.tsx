@@ -28,3 +28,7 @@ export const AppTitle = styled.h1`
 export const AppIntro = styled.p`
   font-size: large;
 `;
+
+export const EmojiWrapper = styled.span.attrs({
+  role: "img"
+})``;
