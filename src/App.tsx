@@ -11,6 +11,8 @@ import {
   EmojiWrapper
 } from "./style/App";
 import ThemeSelect from "./components/ThemeSelect";
+import Button from "./components/Button";
+import BigButt from "./components/BigButt";
 
 interface AppState {
   theme: ThemeInterface;
@@ -45,7 +47,10 @@ class App extends React.Component<{}, AppState> {
               Components styled with <code>styled-components</code>{" "}
               <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
             </AppIntro>
+            <Button>Normal Button</Button>
+            <Button primary>Primary Button</Button>
             <ThemeSelect handleThemeChange={this.handleThemeChange} />
+            <BigButt>Big Button</BigButt>
           </AppWrapper>
         </>
       </ThemeProvider>
