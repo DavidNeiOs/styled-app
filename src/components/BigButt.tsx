@@ -1,7 +1,11 @@
 import styled from "../styled-components";
 import Button from "./Button";
 
-const BigButt = styled(Button)`
+interface BigButtProps {
+  medium?: boolean;
+}
+
+const BigButt = styled(Button)<BigButtProps>`
   height: 3rem;
   font-size: 2rem;
   width: 40vw;

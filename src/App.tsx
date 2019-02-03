@@ -13,6 +13,7 @@ import {
 import ThemeSelect from "./components/ThemeSelect";
 import Button from "./components/Button";
 import BigButt from "./components/BigButt";
+import Underline from "./components/Underline";
 
 interface AppState {
   theme: ThemeInterface;
@@ -41,16 +42,22 @@ class App extends React.Component<{}, AppState> {
               <AppTitle>Welcome to React</AppTitle>
             </AppHeader>
             <AppIntro>
-              Bootstrapped with <code>create-react-app</code>.
+              Bootstrapped with{" "}
+              <Underline>
+                <code>create-react-app</code>.
+              </Underline>
             </AppIntro>
             <AppIntro>
-              Components styled with <code>styled-components</code>{" "}
+              Components styled with{" "}
+              <Underline>
+                <code>styled-components</code>
+              </Underline>{" "}
               <EmojiWrapper aria-label="nail polish">💅</EmojiWrapper>
             </AppIntro>
             <Button>Normal Button</Button>
             <Button primary>Primary Button</Button>
             <ThemeSelect handleThemeChange={this.handleThemeChange} />
-            <BigButt>Big Button</BigButt>
+            <BigButt medium>Big Button</BigButt>
           </AppWrapper>
         </>
       </ThemeProvider>
