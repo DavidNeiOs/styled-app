@@ -4,7 +4,8 @@
 
 This App was made following the [**medium** article][1]. Also the [Typescript documentation][2] on how to use it with react and the [Styled Components documantation][3] on how to integrate the them with typescript.
 
-![React Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" width="150">
+
 ## Tech
 
 * Typescript
