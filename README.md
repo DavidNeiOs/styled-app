@@ -12,7 +12,12 @@ This App was made following the [**medium** article][1]. Also the [Typescript do
 * React
 * Styled Components v4
 
-## 
+## Steps to run
+
+1. Clone or download the project
+1. cd to the project folder
+1. npm install
+1. npm start
 
 
 [1]: https://medium.com/styled-components/styled-components-getting-started-c9818acbcbbd "Getting started with Styled Components"
